@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 300px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 1024px) {
+    .wrap {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,159 @@
+.shell {
+  background: #081130;
+  font-family: "Montserrat", sans-serif;
+  padding: 42px 0 28px;
+  z-index: 100;
+  position: relative;
+}
+
+.wrap {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 340px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1650px) {
+  .wrap {
+    padding: 0 140px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .wrap {
+    padding: 0 90px;
+  }
+}
+
+@media (max-width: 820px) {
+  .wrap {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    padding: 0 22px;
+  }
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 58px;
+}
+
+.itemBox {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.telGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.tel {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+
+.meta {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.35;
+}
+
+
+@media (max-width: 780px) {
+  .layout {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 22px;
+  }
+
+  .infoBlock {
+    width: 100%;
+    column-gap: 36px;
+  }
+
+  .itemBox {
+    width: 100%;
+  }
+
+  .brandTitle {
+    font-size: 25px;
+  }
+
+  .tel {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brandBlock {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+
+  .brandTitle {
+    font-size: 23px;
+  }
+
+  .tel {
+    font-size: 17px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+}
