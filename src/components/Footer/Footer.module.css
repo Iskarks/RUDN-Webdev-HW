@@ -1,0 +1,111 @@
+.container {
+  font-family: "Montserrat", sans-serif;
+  background: #081130;
+  color: #ffffff;
+  padding: 70px 0 60px;
+}
+
+.content {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 350px;
+}
+
+@media (max-width: 1580px) {
+  .content {
+    padding: 0 140px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 90px;
+  }
+}
+
+@media (max-width: 840px) {
+  .content {
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    padding: 0 25px;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 26px;
+}
+
+.linksList {
+  display: flex;
+  column-gap: 42px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.copyInfo {
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1.5;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding: 40px 0 35px;
+    margin-top: 55px;
+  }
+
+  .linksList {
+    flex-direction: column;
+    row-gap: 22px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .copyInfo {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    padding: 32px 0 28px;
+    margin-top: 35px;
+  }
+
+  .linksList {
+    row-gap: 18px;
+  }
+
+  .link {
+    font-size: 13px;
+  }
+
+  .copyInfo {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+}

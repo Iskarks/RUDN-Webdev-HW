@@ -1,0 +1,136 @@
+
+.products__title {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #2e363e;
+}
+
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .products__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.products__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 380px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.products__card:hover {
+    transform: translateY(-5px);
+}
+
+
+.products__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.products__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 50px 44px;
+}
+
+.products__name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2e363e;
+    width: 247px;
+}
+
+.products__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5a5a5a;
+    width: 247px;
+    margin-bottom: 12px;
+}
+
+
+.products__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.products__price {
+    font-size: 24px;
+    font-weight: 500;
+    color: #434b53;
+}
+
+
+.products__button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FED84C;
+    color: #2e363e;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 163px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.products__button:hover {
+    background-color: #2e363e;
+    color: #ffffff;
+}
+.orderCounter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.counterBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: #FED84C;
+  color: #2e363e;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counterValue {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.totalPrice {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
